@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html >
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmBox - Filmajánló</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🎬 FilmBox</h1>
+
+        <nav>
+            <a href="#">Főoldal</a>
+            <a href="#filmek">Filmek</a>
+            <a href="#ajanlo">Filmajánló</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <h2>Találd meg a következő kedvenc filmed!</h2>
+            <p>Válassz egy műfajt, és mi ajánlunk neked egy filmet.</p>
+
+            <div class="kereso">
+                <input type="text" id="kereses" placeholder="Film keresése...">
+                <button onclick="kereses()">🔎 Keresés</button>
+            </div>
+        </section>
+
+        <section id="ajanlo" class="ajanlo">
+            <h2>🎲 Film ajánlása</h2>
+
+            <select id="mufaj">
+                <option value="mind">Minden műfaj</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="akcio">Akció</option>
+                <option value="vigjatek">Vígjáték</option>
+                <option value="horror">Horror</option>
+            </select>
+
+            <button onclick="ajanlFilm()">Ajánlj egy filmet!</button>
+
+            <div id="ajanlas"></div>
+        </section>
+
+        <section id="filmek">
+            <h2>⭐ Népszerű filmek</h2>
+
+            <div class="filmek" id="filmLista">
+
+                <div class="film" data-mufaj="fantasy" data-cim="Így neveld a sárkányodat">
+                    <div class="plakat">🐉</div>
+                    <h3>Így neveld a sárkányodat</h3>
+                    <p>Fantasy • Kaland</p>
+                    <span>⭐ 8.1</span>
+                </div>
+
+                <div class="film" data-mufaj="vigjatek" data-cim="Shrek">
+                    <div class="plakat">🧅</div>
+                    <h3>Shrek</h3>
+                    <p>Vígjáték • Fantasy</p>
+                    <span>⭐ 7.9</span>
+                </div>
+
+                <div class="film" data-mufaj="akcio" data-cim="Pókember">
+                    <div class="plakat">🕷️</div>
+                    <h3>Pókember</h3>
+                    <p>Akció • Kaland</p>
+                    <span>⭐ 8.0</span>
+                </div>
+
+                <div class="film" data-mufaj="horror" data-cim="Az">
+                    <div class="plakat">🎈</div>
+                    <h3>Az</h3>
+                    <p>Horror • Thriller</p>
+                    <span>⭐ 7.3</span>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 FilmBox - Filmajánló oldal</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
