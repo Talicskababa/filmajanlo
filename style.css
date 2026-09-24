@@ -132,13 +132,6 @@ select {
     color: #facc15;
 }
 
-footer {
-    text-align: center;
-    padding: 25px;
-    background: #1f2937;
-    color: #9ca3af;
-}
-
 @media (max-width: 600px) {
     header {
         flex-direction: column;
