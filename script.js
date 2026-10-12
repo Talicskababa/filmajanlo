@@ -70,20 +70,18 @@ function ajanlFilm() {
 
     let valasztottMufaj = document.getElementById("mufaj").value;
 
-    let lehetosegek = filmek;
+    let filmek = document.querySelectorAll(".film"):
 
-    if (valasztottMufaj !== "mind") {
-        lehetosegek = filmek.filter(
-            film => film.mufaj === valasztottMufaj
-        );
-    }
-
-    let film = lehetosegek[
-        Math.floor(Math.random() * lehetosegek.length)
-    ];
-
-    document.getElementById("ajanlas").innerHTML =
-        "🎬 Neked ezt ajánljuk: <strong>" + film.cim + "</strong>";
+    filmek.forEach(function(film) {
+        let mufaj = film.dataset.mufaj:
+        if (valasztottMufaj === "mind" || mufaj.includes(valasztottMufaj)) {
+            film.style-display = "block";
+        }
+        else {
+            film.style.display = "none";
+            
+        }
+    });
 }
 
 
