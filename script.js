@@ -14,7 +14,56 @@ const filmek = [
     {
         cim: "Az",
         mufaj: "horror"
-    }
+    },
+    {
+        cim: "Alien",
+        mufaj: "horror"
+    },
+    {
+        cim: "Vissza a jövőbe",
+        mufaj: "vigjatek"
+    },
+    {
+        cim: "Merida, a bátor",
+        mufaj: "gyerek"
+    },
+    
+    {
+        cim: "Halálos iramban",
+        mufaj: "akcio"
+    },
+    {
+        cim: "Forrest Gump",
+        mufaj: "vigjatek"
+    },
+    {
+        cim: "Vasember",
+        mufaj: "akcio"
+    },
+    {
+        cim: "Predátor",
+        mufaj: "horror"
+    },    
+
+    {
+        cim: "A kaptár",
+        mufaj: "akcio"
+    },
+    {
+        cim: "Csillagok háborúja",
+        mufaj: "akcio"
+    },
+    {
+        cim: "Gyűrűk ura",
+        mufaj: "fantasy"
+    },
+    {
+        cim: "WALL-E",
+        mufaj: "gyerek"
+    },
+
+
+    
 ];
 
 function ajanlFilm() {
