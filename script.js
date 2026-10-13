@@ -58,7 +58,7 @@ const filmek = [
         mufaj: "fantasy"
     },
     {
-        cim: "WALL-E",
+        cim: "WALL•E",
         mufaj: "gyerek"
     },
 
