@@ -93,6 +93,8 @@ select {
 .filmek {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 25px;
 }
 
@@ -102,6 +104,7 @@ select {
     padding: 15px;
     border-radius: 10px;
     transition: 0.2s;
+    flex-shrink: 0;
 }
 
     .film:hover {
@@ -124,6 +127,12 @@ select {
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+}
+
+.film_link{
+    text-decoration: none;
+    color: inherit;
+    display: block;
 }
 
 .film h3 {
