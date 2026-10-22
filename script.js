@@ -27,7 +27,7 @@ const filmek = [
         cim: "Merida, a bátor",
         mufaj: "gyerek"
     },
-    
+
     {
         cim: "Halálos iramban",
         mufaj: "akcio"
@@ -43,7 +43,7 @@ const filmek = [
     {
         cim: "Predátor",
         mufaj: "horror"
-    },    
+    },
 
     {
         cim: "A kaptár",
@@ -63,23 +63,22 @@ const filmek = [
     },
 
 
-    
+
 ];
 
 function ajanlFilm() {
 
     let valasztottMufaj = document.getElementById("mufaj").value;
 
-    let filmek = document.querySelectorAll(".film"):
+    let filmek = document.querySelectorAll(".film");
 
     filmek.forEach(function(film) {
-        let mufaj = film.dataset.mufaj:
+        let mufaj = film.dataset.mufaj.split(" ");
         if (valasztottMufaj === "mind" || mufaj.includes(valasztottMufaj)) {
-            film.style-display = "block";
+            film.style.display = "block";
         }
         else {
             film.style.display = "none";
-            
         }
     });
 }
