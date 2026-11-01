@@ -18,9 +18,9 @@ header {
     align-items: center;
 }
 
-    header h1 {
-        color: #facc15;
-    }
+header h1 {
+    color: #facc15;
+}
 
 nav a {
     color: white;
@@ -28,24 +28,24 @@ nav a {
     margin-left: 25px;
 }
 
-    nav a:hover {
-        color: #facc15;
-    }
+nav a:hover {
+    color: #facc15;
+}
 
-.hero {
+.filmkereso {
     text-align: center;
     padding: 80px 20px;
     background: #374151;
 }
 
-    .hero h2 {
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
+.filmkereso h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
 
-    .hero p {
-        margin-bottom: 30px;
-    }
+.filmkereso p {
+    margin-bottom: 30px;
+}
 
 .kereso input {
     padding: 12px;
@@ -63,17 +63,17 @@ button {
     font-weight: bold;
 }
 
-    button:hover {
-        background: #eab308;
-    }
+button:hover {
+    background: #eab308;
+}
 
 section {
     padding: 50px 8%;
 }
 
-    section h2 {
-        margin-bottom: 25px;
-    }
+section h2 {
+    margin-bottom: 25px;
+}
 
 .ajanlo {
     text-align: center;
@@ -83,11 +83,6 @@ select {
     padding: 12px;
     margin-right: 10px;
     border-radius: 6px;
-}
-
-#ajanlas {
-    margin-top: 25px;
-    font-size: 20px;
 }
 
 .filmek {
@@ -107,19 +102,16 @@ select {
     flex-shrink: 0;
 }
 
-    .film:hover {
-        transform: translateY(-5px);
-    }
+.film:hover {
+    transform: translateY(-5px);
+}
 
 .plakat {
     height: 250px;
     background: #4b5563;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 70px;
     border-radius: 8px;
     margin-bottom: 15px;
+    overflow: hidden;
 }
 
 .plakat img {
@@ -129,7 +121,7 @@ select {
     border-radius: 8px;
 }
 
-.film_link{
+.film_link {
     text-decoration: none;
     color: inherit;
     display: block;
@@ -154,7 +146,7 @@ select {
         gap: 15px;
     }
 
-    .hero h2 {
+    .filmkereso h2 {
         font-size: 28px;
     }
 
