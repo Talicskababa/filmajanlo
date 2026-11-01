@@ -1,4 +1,4 @@
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="hu">
 <head>
     <meta charset="UTF-8">
@@ -21,7 +21,7 @@
 
     <main>
 
-        <section class="hero">
+        <section class="filmkereso">
             <h2>Találd meg a következő kedvenc filmed!</h2>
             <p>Válassz egy műfajt, és mi ajánlunk neked egy filmet.</p>
 
@@ -44,212 +44,12 @@
             </select>
 
             <button onclick="ajanlFilm()">Ajánlj egy filmet!</button>
-
-            <div id="ajanlas"></div>
         </section>
 
         <section id="filmek">
             <h2>⭐ Népszerű filmek</h2>
-
             <div class="filmek" id="filmLista">
-
-                <div class="film" data-mufaj="fantasy" data-cim="Így neveld a sárkányodat">
-                <a href="https://videa.hu/videok/film-animacio/igy.neveld.a.sarkanyodat-vps.mp4-mp4-8lHCJdSoIWAEA18s" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="httyd.webp" alt="Így neveld a sárkányodat">
-                    </div>
-                    <h3>Így neveld a sárkányodat</h3>
-                    <p>Fantasy • Kaland</p>
-                    <span>⭐ 8.1</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="vigjatek fantasy" data-cim="Shrek">
-                <a href="https://videa.hu/videok/film-animacio/shrek-teljes-film-1080p-fhd-fiona-hu-NEJnYxJz5eW4wcB9" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="shrek.jpg" alt="Shrek">
-                    </div>
-                    <h3>Shrek</h3>
-                    <p>Vígjáték • Fantasy</p>
-                    <span>⭐ 7.9</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="akcio" data-cim="Pókember">
-                <a href="https://videa.hu/videok/pokember-2002-akcio-amerikai-elizabeth-banks-c7i1TJP2iClTJsFx" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="spider_man.jpg" alt="Pókember">
-                    </div>
-                    <h3>Pókember</h3>
-                    <p>Akció • Kaland</p>
-                    <span>⭐ 8.0</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="horror" data-cim="Az">
-                <a href="https://videa.hu/videok/film-animacio/az-1-SgG2KJDRGPdJgW6E" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="it.webp" alt="Az">
-                    </div>
-                    <h3>Az</h3>
-                    <p>Horror • Thriller</p>
-                    <span>⭐ 7.3</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="horror" data-cim="Alien">
-                <a href="https://videa.hu/videok/film-animacio/alien-1-a-nyolcadik-utas-117-perc-18-even-aluliak-szamara-nem-aj-CxHsobRhUbbE9Gnc" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="alien.jpg" alt="Alien">
-                    </div>
-                    <h3>Alien</h3>
-                    <p>Sci-fi • Horror</p>
-                    <span>⭐ 8.4</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="vigjatek" data-cim="Vissza a jövőbe">
-                <a href="https://videa.hu/videok/film-animacio/vissza-a-jovobe-1-hd-film-animacio-Usbd4N9i7x6WTdlR" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="back_to_the_future.jpg" alt="Vissza a jövőbe">
-                    </div>
-                    <h3>Vissza a jövőbe</h3>
-                    <p>Sci-fi • Vígjáték</p>
-                    <span>⭐ 8.5</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="gyerek" data-cim="Merida, a bátor">
-                <a href="https://videa.hu/videok/film-animacio/merida-a-bator-2012-TSE8Wq9ray3BuqA5" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="brave.jpg" alt="Merida, a bátor">
-                    </div>
-                    <h3>Merida, a bátor</h3>
-                    <p>Gyerek • Kaland</p>
-                    <span>⭐ 7.1</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="akcio" data-cim="Halálos iramban">
-                <a href="https://videa.hu/videok/jarmuvek/halalos-iramban-teljes-film-jarmuvek-WZyWnC91eOSXIkmo" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="fast_and_furious.jpg" alt="Halálos iramban">
-                    </div>
-                    <h3>Halálos iramban</h3>
-                    <p>Akció • Krimi</p>
-                    <span>⭐ 6.8</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="vigjatek" data-cim="Forrest Gump">
-                <a href="https://videa.hu/videok/film-animacio/forest-gump-film-animacio-MURrxvzdMu2rDah7" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="forrest_gump.jpg" alt="Forrest Gump">
-                    </div>
-                    <h3>Forrest Gump</h3>
-                    <p>Vígjáték • Romantikus</p>
-                    <span>⭐ 8.8</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="akcio" data-cim="Vasember">
-                <a href="https://videa.hu/videok/film-animacio/vasember-2.-teljes-film-magyarul-qy58x2TFTbUnua40" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="ironman.jpg" alt="Vasember">
-                    </div>
-                    <h3>Vasember</h3>
-                    <p>Akció • Sci-fi</p>
-                    <span>⭐ 7.9</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="akcio horror" data-cim="Predátor">
-                <a href="https://videa.hu/videok/film-animacio/predator-bwTNKIqV8yd4zN8U" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="predator.jpg" alt="Predátor">
-                    </div>
-                    <h3>Predátor</h3>
-                    <p>Akció • Horror</p>
-                    <span>⭐ 7.8</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="akcio horror" data-cim="Kaptár">
-                <a href="http://videa.hu/videok/film-animacio/a-kaptar-2026-film-animacio-6VVmup5eDTgbQABH" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="resident_evil.jpg" alt="Kaptár">
-                    </div>
-                    <h3>Kaptár</h3>
-                    <p>Akció • Horror</p>
-                    <span>⭐ 6.6</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="akcio" data-cim="Csillagok háborúja">
-                <a href="https://videa.hu/videok/film-animacio/star-wars-iv.-csillagok-haboruja-film-animacio-WPjBnMQzDVJtkfpc" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="star_wars.jpg" alt="Csillagok háborúja">
-                    </div>
-                    <h3>Csillagok háborúja</h3>
-                    <p>Akció • Kaland</p>
-                    <span>⭐ 6.5</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="fantasy" data-cim="Gyűrűk ura">
-                <a href="https://videa.hu/videok/film-animacio/a-gyuruk-ura-1-gyuru-film-animacio-vYiNHmYBmEmBq7ty" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="the_lord_of_the_rings.jpg" alt="Gyűrűk ura">
-                    </div>
-                    <h3>Gyűrűk ura</h3>
-                    <p>Fantasy • Kaland</p>
-                    <span>⭐ 8.9</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="gyerek" data-cim="WALL•E">
-                <a href="https://videa.hu/videok/film-animacio/walle-teljes-film-magyar-disney-movie-2008-magya-vzsT3MPk5FQWTnj7" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="wall_e.jpg" alt="WALL•E">
-                    </div>
-                    <h3>WALL•E</h3>
-                    <p>Sci-fi • Gyerek</p>
-                    <span>⭐ 8.4</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="gyerek" data-cim="Oroszlánkirály">
-                <a href="https://videa.hu/videok/film-animacio/az-oroszlankiraly-1994-1080p-mhd-mese-DA1X6dywGEK66mV5" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="lion_king.jpg" alt="Oroszlánkirály">
-                    </div>
-                    <h3>Oroszlánkirály</h3>
-                    <p>Gyerek • Musicel</p>
-                    <span>⭐ 8.5</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="fantasy" data-cim="Halálsoron">
-                <a href="https://videa.hu/videok/film-animacio/stephen-king-halalsoron.-1999.-188-perc.-amerikai-fantasztikus-thriller-q6i740aH2WIayv3j" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="the_green_mile.jpg" alt="Halálsoron">
-                    </div>
-                    <h3>Halálsoron</h3>
-                    <p>Fantasy • Dráma</p>
-                    <span>⭐ 8.6</span>
-                </a>
-                </div>
-
-                <div class="film" data-mufaj="horror" data-cim="A kör">
-                <a href="https://videa.hu/videok/film-animacio/a-kor-2002-amerikai-horror-rhjkEYwaMzfdst7Q" class="film_link" target="_blank">
-                    <div class="plakat">
-                        <img src="the_ring.jpg" alt="A kör">
-                    </div>
-                    <h3>A kör</h3>
-                    <p>Horror • Misztikus</p>
-                    <span>⭐ 7.1</span>
-                </a>
-                </div>
+                
             </div>
         </section>
 
