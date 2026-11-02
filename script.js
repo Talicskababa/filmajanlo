@@ -122,7 +122,7 @@ const filmek = [
     {
         cim: "Oroszlánkirály",
         mufaj: "gyerek",
-        kategoria: "Gyerek • Musicel",
+        kategoria: "Gyerek • Musical",
         ertekeles: "8.5",
         kep: "https://lumiere-a.akamaihd.net/v1/images/p_thelionking_19752_1_0b9de87b.jpeg",
         link: "https://videa.hu/videok/film-animacio/az-oroszlankiraly-1994-1080p-mhd-mese-DA1X6dywGEK66mV5"
